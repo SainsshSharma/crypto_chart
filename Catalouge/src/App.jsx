@@ -37,11 +37,13 @@ function App() {
         <div className="menu">
           <Menu />
         </div>
+        <div id="fullScreen">
         <div className="actionBar">
           <Actionbar />
         </div>
         <div className="pages">
           <Outlet context={[data, secondData]} />
+        </div>
         </div>
       </div>
     );

@@ -1,9 +1,11 @@
 import "./Actionbar.css";
 import { useStore } from "../store/storeGraph";
+import { useState } from "react";
 
 const Actionbar = () => {
   const { interval, updateInterval } = useStore();
   const { compare, updateCompare } = useStore();
+  const [fullScreen,setFullScreen]=useState(false);
   function setValue(event) {
     updateInterval(event);
   }
@@ -17,14 +19,26 @@ const Actionbar = () => {
     { data: "1y", value: "365" },
     { data: "max", value: 365 },
   ];
-
+  function fullScreenFunction(){
+    setFullScreen(!fullScreen)
+    
+    const elemet=document.getElementById("fullScreen")
+    const isFullScreen=document.fullscreenElement
+    if(!isFullScreen)
+    {
+      elemet.requestFullscreen()
+    }
+    else{
+      document.exitFullscreen()
+    }
+  }
   return (
     <div className="actionbarContainer">
       <div className="options">
         <div className="icons">
-          <button className="icon">
+          <button className="icon" onClick={fullScreenFunction}>
             <img src="./enlarge.png" alt="" />
-            Fullscreen
+            {!fullScreen?"Fullscreen":"Exit FullScreen"}
           </button>
           <button
             className="icon"

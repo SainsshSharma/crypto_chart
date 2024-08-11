@@ -1,13 +1,26 @@
-
 @font-face {
   font-family: "circularstd";
-  src: local("circularstd"),url("./fonts/circular-std-medium-500.ttf") format("opentype");
+  src: local("circularstd"),
+    url("./fonts/circular-std-medium-500.ttf") format("opentype");
   font-weight: normal;
 }
-*{
+* {
   padding: 0;
   margin: 0;
 }
-.charts{
+.charts {
   transition: all 0.5s ease-in-out;
+}
+
+:-webkit-full-screen {
+  padding: 40px;
+  background-color: white;
+}
+:-moz-full-screen {
+  padding: 40px;
+  background-color: white;
+}
+:full-screen {
+  padding: 40px;
+  background-color: white;
 }
