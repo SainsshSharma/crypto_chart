@@ -1,0 +1,11 @@
+.compareTable{
+    display: flex;    
+    gap: 5%;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;    
+}
+
+.compareTable>*{
+    padding-top: 5%;
+}

@@ -1,0 +1,67 @@
+.actionbarContainer{
+    padding-top: 5%;
+}
+
+.options{
+    max-width: 750px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.actionbarContainer .options .icons{
+    display: flex;
+    gap: 15%;
+}
+
+.actionbarContainer .options .icons button {
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    color: #6F7177;
+    cursor: pointer;
+}
+
+.days ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    
+}
+
+.days ul li button{
+    font-size: 18px;
+    padding: 10px 15px;
+    color: #6F7177;
+    background-color: transparent;
+    border: none;    
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.days ul li{
+    border-radius: 10px;
+    color: white;
+}
+
+.active{
+    background-color: #4B40EE !important;
+    color: white !important;
+}
+
+@media only screen and (max-width:425px) {
+    .actionbarContainer .options .icons button {
+        font-size: 17px;
+    }
+    .days ul li button{
+        font-size: 17px;
+    }
+}
