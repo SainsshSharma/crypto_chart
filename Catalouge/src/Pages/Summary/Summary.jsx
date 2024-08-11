@@ -10,7 +10,9 @@ const Display=({data,second})=>{
   return(<div>
     {
       !compare?
-        (<Tables data={data} curr={curr}/>)
+      (<div className="compareTable">
+        <Tables data={data} curr={curr}/>
+      </div>)
       :
       <div className="compareTable">
         <Tables data={data} curr={curr}/>

@@ -64,9 +64,9 @@ const CandleChart = ({data,element}) => {
     return () => {
       root.dispose();
     };
-  }, [data]);
+  }, [data,element]);
 
-  return <div id={element} className="charts" style={{ width: "100%", height: "500px" }}></div>;
+  return <div id={element} style={{ width: "100%", height: "500px" }}></div>;
 };
 
 export default CandleChart;

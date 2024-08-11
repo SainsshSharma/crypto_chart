@@ -10,7 +10,9 @@ const DisplayCandleChart = ({ data, second }) => {
   return (
     <div>
       {!compare ? (
-        <CandleChart data={data} element="chartdiv7" curr={curr} />
+        <div className="compareCandle">
+          <CandleChart data={data} element="chartdiv7" curr={curr} />
+        </div>
       ) : (
         <div className="compareTable">
           <div className="first">

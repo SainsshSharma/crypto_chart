@@ -14,9 +14,9 @@ import Paper from "@mui/material/Paper";
 const Tables = ({ data,curr }) => {
   
 
-console.log(data)
+
   return (
-    <div>
+    <div className="TableContainer">
       <TableContainer component={Paper} sx={{width:505,height:500}}>
         <Table sx={{ minWidth: 200}} aria-label="simple table" >
           <TableHead sx={{background:"#4B40EE",color:"white"}}>
