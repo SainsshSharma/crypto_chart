@@ -1,0 +1,26 @@
+.heading{
+ font-size: 70px;
+ font-weight: 400;   
+ line-height: 88.56px;
+ color: #1A243A;
+}
+
+.heading sup{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30.36px;
+    color: #BDBEBF;
+}
+.profit{
+    font-size: 18px;
+    line-height: 22.77px;
+    
+}
+
+.gain{
+    color: #67BF6B;
+}
+
+.loss{
+    color: #8e2727;
+}

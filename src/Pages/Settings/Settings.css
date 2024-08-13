@@ -1,0 +1,22 @@
+.settingsContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    gap: 20px;
+    width: fit-content;
+}
+.settingsContainer select{
+    font-size: 18px;
+    background-color:white ;
+    border: 1px solid #4B40EE;
+    color: #6F7177;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.settingsContainer .settingsHeading{
+    padding: 10px;
+    font-size: 18px;
+    color: #6F7177;
+}

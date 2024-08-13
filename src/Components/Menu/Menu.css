@@ -1,0 +1,38 @@
+.unorderList{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;    
+    font-size: 18px;
+    gap: 3%;
+    max-width: 100%;
+    
+    
+}
+
+.unorderList a{
+    text-decoration: none;
+    color: #6F7177;   
+    padding-bottom: 20px;
+    transition: all 0.12s ease-in;
+}
+
+.unorderList li{
+    
+}
+
+.selected{
+    border-bottom: 3px solid #4B40EE;
+}
+
+.divider{
+    width: 99vw;
+    margin-left: -60px;
+    border-bottom: 1px solid #EFF1F3;
+}
+
+@media only screen and (max-width:425px) {
+    .unorderList a{
+        font-size: 17px;
+    }
+}

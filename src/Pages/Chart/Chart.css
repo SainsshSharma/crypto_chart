@@ -1,0 +1,23 @@
+.compareTable{
+    display: flex;    
+    gap: 5%;
+    justify-content: start;
+    align-items: center;      
+}
+
+
+.first{    
+    width: 45%;
+}
+.second{
+    width:45%;
+}
+.compareTable *{
+    padding-top: 5%;    
+}
+
+@media only screen and (max-width:768px) {
+    .first,.second{
+        width: 100%;
+    }
+}
