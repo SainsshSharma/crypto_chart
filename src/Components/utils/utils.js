@@ -27,9 +27,8 @@ export const fetchHeadingData = async (currency) => {
 }
 
 
-export const fetchDataOnDate = async (date, currency) => {
+export const fetchDataOnDate = async (date, currency) => {  
   
-  console.log(date)
   try {
     const url = `https://api.coingecko.com/api/v3/coins/${currency}/ohlc?vs_currency=usd&days=${date}`
 
@@ -93,9 +92,10 @@ export function filterOHLCData(data) {
 export function filterOHLCDataForVolume(data) {
   const newData = []
   data.map(i => {
+    
     newData.push({
       "t": i[0],
-      v: Math.abs(i[2] - i[1])
+      v: Math.abs(i[1] - i[4])
     })
   })
   return newData;

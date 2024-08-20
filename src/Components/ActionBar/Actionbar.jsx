@@ -13,11 +13,11 @@ const Actionbar = () => {
   const btnData = [
     { data: "1d", value: "1" },
     { data: "1w", value: "7" },
+    { data: "2w", value: "14" },
     { data: "1m", value: "30" },
     { data: "3m", value: "90" },
     { data: "6m", value: "180" },
     { data: "1y", value: "365" },
-    { data: "max", value: "14" },
   ];
   function fullScreenFunction(){
     setFullScreen(!fullScreen)
